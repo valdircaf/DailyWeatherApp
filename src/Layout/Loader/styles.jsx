@@ -19,4 +19,7 @@ export const LoaderContainer = styled.section`
     }
     animation: showLogo 2s infinite;
   }
+  @media screen and (max-height: 900px){
+    top: 20%;
+  }
 `;
