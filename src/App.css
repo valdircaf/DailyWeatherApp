@@ -8,3 +8,17 @@
 a{
   text-decoration: none;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0659cd;
+  border-radius: 20px;
+  border: 3px solid #0659cd;
+}

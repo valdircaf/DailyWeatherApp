@@ -13,8 +13,7 @@ export default function Home() {
   const apiUnsplashKey = 'yOuNjoi4BgeFvEfIt3lYgwyqC1qfARjOpL_IxpTS8fE';
   const apiOpenWeatherKey = '9e205497e9041ccbe678394f14d3ad66';
   const urlOpenWeather = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&units=metric&appid=${apiOpenWeatherKey}`;
-  const pesquisa = 'montanhas escuras';
-  const urlUnsplash = `https://api.unsplash.com/search/photos/?query=${pesquisa}&client_id=${apiUnsplashKey}`;
+  const urlUnsplash = `https://api.unsplash.com/search/photos/?query=${cityValue}&client_id=${apiUnsplashKey}`;
   const randomNum = Math.floor(Math.random() * 10);
   const handleOnChangeInput = (e) => {
     setCityValue(e.target.value);
